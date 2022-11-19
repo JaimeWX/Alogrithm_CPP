@@ -23,6 +23,7 @@ struct ListNode
 
 ListNode* create_LinkList(vector<int> nums);
 void travers_LinkList(ListNode* head);
+void travers_Vector(const vector<int>& nums);
 
 
 #endif
