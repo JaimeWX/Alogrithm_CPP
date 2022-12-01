@@ -1,9 +1,6 @@
 #include<stdlib.h>
-#include<vector>
 #include<stack>
 #include"linklist_core.h"
-using namespace std;
-
 
 class Solution 
 {
@@ -33,10 +30,14 @@ class Solution
 int main()
 {
     vector<int> nums = {1,3,2};
+
     ListNode *head = nullptr;
     head = create_LinkList(nums);
-    travers_LinkList(head);
 
     Solution s1;
-    s1.reversePrint(head);
+    vector<int> result;
+    result = s1.reversePrint(head);
+
+    travers_LinkList(head);
+    travers_Vector(result);
 }

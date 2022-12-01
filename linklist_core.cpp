@@ -24,6 +24,13 @@ void travers_LinkList(ListNode* head)
 
 }
 
+void travers_Vector(const vector<int>& nums)
+{
+    for(int i=0;i<nums.size();i++)
+    {
+        cout << nums[i] << endl;
+    }
+}
 
 // int main()
 // {   
